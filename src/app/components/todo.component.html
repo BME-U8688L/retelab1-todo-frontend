@@ -1,0 +1,13 @@
+<div class="card-body container">
+    <div class="row">
+        <span class="col-auto align-center mt-2"><input type="checkbox" [checked]="todo.isdone" (click)="checkboxClicked($event)"></span>
+        <h2 class="col card-title">{{todo.taskname}}</h2>
+    </div>
+</div>
+<div class="card-footer text-center container">
+    <div class="row align-items-center">
+        <small class="col-auto">{{todo.category}}</small>
+        <small class="col">{{todo.performdate|date:'longDate'}}</small>
+        <span class="col-auto"><button class="btn btn-outline-secondary btn-sm" (click)="editButtonClicked()"><span>EDIT</span></button></span>
+    </div>
+</div>
